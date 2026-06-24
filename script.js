@@ -1,7 +1,3 @@
-// ==========================
-// TYPING EFFECT
-// ==========================
-
 const text = "Jared Alexander";
 let index = 0;
 
@@ -17,35 +13,17 @@ function typingEffect() {
     }
 }
 
-// ==========================
-// MUSIC CONTROL
-// ==========================
-
 function toggleMusic() {
     const music = document.getElementById("music");
 
-    if (!music) {
-        alert("Audio tidak ditemukan.");
-        return;
-    }
+    if (!music) return;
 
     if (music.paused) {
-        music.play()
-            .then(() => {
-                console.log("Music playing");
-            })
-            .catch(error => {
-                console.error("Audio gagal diputar:", error);
-            });
+        music.play();
     } else {
         music.pause();
-        console.log("Music paused");
     }
 }
-
-// ==========================
-// PAGE LOAD
-// ==========================
 
 window.addEventListener("load", () => {
     typingEffect();
