@@ -18,8 +18,17 @@ function toggleMusic() {
 
     if (!music) return;
 
+    music.muted = false;
+    music.volume = 1;
+
     if (music.paused) {
-        music.play();
+        const playPromise = music.play();
+
+        if (playPromise !== undefined) {
+            playPromise.catch(() => {
+                alert("Klik sekali lagi untuk mengaktifkan audio");
+            });
+        }
     } else {
         music.pause();
     }
