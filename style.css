@@ -280,3 +280,23 @@ footer{
         width:95%;
     }
 }
+.youtube-container{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.youtube-container iframe{
+    width:100%;
+    max-width:1000px;
+    height:560px;
+    border:none;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(56,189,248,0.5);
+}
+
+@media(max-width:768px){
+    .youtube-container iframe{
+        height:250px;
+    }
+}
