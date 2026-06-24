@@ -260,7 +260,47 @@ footer{
     padding:25px;
     margin-top:50px;
 }
+/* FOOTER */
+footer{
+    background:#0f172a;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
 
+/* ANIMASI GALLERY */
+.card{
+    display:flex;
+    justify-content:center;
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    ...
+}
 /* MOBILE */
 @media(max-width:768px){
 
