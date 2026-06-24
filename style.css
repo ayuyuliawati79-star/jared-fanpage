@@ -55,8 +55,8 @@ nav a:hover{
 }
 
 .hero img{
-    width:220px;
-    height:280px;
+    width:230px;
+    height:300px;
     object-fit:cover;
     border-radius:20px;
     box-shadow:0 0 25px #38BDF8;
@@ -126,8 +126,8 @@ button:hover{
 }
 
 .quote p{
-    font-style:italic;
     font-size:18px;
+    font-style:italic;
 }
 
 /* FACTS */
@@ -150,7 +150,7 @@ button:hover{
     font-size:18px;
 }
 
-/* GALLERY HEADER */
+/* GALLERY HERO */
 .gallery-hero{
     text-align:center;
     padding:40px 20px;
@@ -163,7 +163,7 @@ button:hover{
 }
 
 .gallery-hero p{
-    color:#cbd5e1;
+    color:#CBD5E1;
 }
 
 /* GALLERY */
@@ -176,8 +176,6 @@ button:hover{
 }
 
 .card{
-    border-radius:15px;
-    overflow:hidden;
     transition:0.4s;
 }
 
@@ -190,19 +188,19 @@ button:hover{
     height:380px;
     object-fit:cover;
     border-radius:15px;
-    transition:0.5s;
+    transition:0.4s;
     box-shadow:0 0 15px rgba(56,189,248,0.3);
 }
 
 .card img:hover{
-    transform:scale(1.08);
+    transform:scale(1.05);
     box-shadow:0 0 25px #38BDF8;
 }
 
 /* MUSIC BUTTON */
 .music-btn-container{
     text-align:center;
-    margin:40px 0;
+    margin:30px 0;
 }
 
 .music-btn{
@@ -211,16 +209,11 @@ button:hover{
     border:none;
     padding:12px 25px;
     border-radius:10px;
-    font-weight:bold;
     cursor:pointer;
-    transition:0.3s;
+    font-weight:bold;
 }
 
-.music-btn:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 15px #38BDF8;
-}
-
+/* VIDEO */
 .video{
     text-align:center;
     padding:60px 20px;
@@ -234,30 +227,15 @@ button:hover{
 
 .video p{
     margin-bottom:25px;
+    color:#CBD5E1;
 }
 
+/* MP4 VIDEO */
 .video video{
     width:95%;
     max-width:1100px;
     border-radius:20px;
     box-shadow:0 0 25px rgba(56,189,248,0.4);
-}
-
-/* VIDEO INFO */
-.video-info{
-    text-align:center;
-    padding:50px 20px;
-}
-
-.video-info h2{
-    color:#38BDF8;
-    margin-bottom:15px;
-}
-
-.video-info p{
-    max-width:700px;
-    margin:auto;
-    line-height:1.8;
 }
 
 /* FOOTER */
@@ -281,6 +259,10 @@ footer{
         height:260px;
     }
 
+    .gallery{
+        padding:20px;
+    }
+
     .card img{
         width:220px;
         height:300px;
@@ -294,8 +276,7 @@ footer{
         font-size:30px;
     }
 
-    .video iframe{
+    .video video{
         width:95%;
-        height:250px;
     }
 }
