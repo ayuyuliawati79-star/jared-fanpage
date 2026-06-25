@@ -1,4 +1,4 @@
-const text = "Jared Alexander";
+const text = "Jared Alexander Reyes Peña";
 let index = 0;
 
 function typingEffect() {
